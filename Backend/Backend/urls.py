@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Frontend.views import OpeningSite
+from Backend.Backend.api.ConnectionIMDb import GettingFilmInfo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', OpeningSite)
+    path('', OpeningSite),
+    path('api/Imdb', GettingFilmInfo)
 ]
