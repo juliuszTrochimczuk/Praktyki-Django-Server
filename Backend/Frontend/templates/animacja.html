@@ -1,6 +1,8 @@
-﻿<head>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <title>filmy</title>
+﻿<html>
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+  <title>animacja</title>
 </head>
 <body>
 
@@ -26,15 +28,15 @@
     <input type="radio" name="r" id="r2">
     <input type="radio" name="r" id="r3">
     <div class="slide s1">
-      <a href="https://www4.bflix.to/movie/spider-man-into-the-spider-verse-oor5j"><img src="aniplakat.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/spider-man-into-the-spider-verse-oor5j"><img src="{% static '/img/aniplakat.jpg' %}" alt="">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/zootopia-286l"><img src="aniplakat1.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/zootopia-286l"><img src="{% static '/img/aniplakat1.jpg' %}" alt="">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/walle-prqx"><img src="aniplakat2.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/walle-prqx<img src="{% static '/img/aniplakat2.jpg' %}" alt="">
     </div>
     </a>
   </div>

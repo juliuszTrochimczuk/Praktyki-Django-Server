@@ -1,5 +1,7 @@
-﻿<head>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+﻿<html>
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
   <title>filmy</title>
 </head>
 <body>
@@ -25,15 +27,15 @@
     <input type="radio" name="r" id="r2">
     <input type="radio" name="r" id="r3">
     <div class="slide s1">
-      <a href="https://www4.bflix.to/movie/shang-chi-and-the-legend-of-the-ten-rings-0mrp7"><img src="strplakat.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/shang-chi-and-the-legend-of-the-ten-rings-0mrp7"><img src="{% static '/img/strplakat.jpg' %}" alt="">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/avengers-endgame-xjm5v"><img src="strplakat1.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/avengers-endgame-xjm5v"><img src="{% static '/img/strplakat1.jpg' %}" alt="">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/black-widow-9jl3q"><img src="strplakat2.jpg" alt="">
+      <a href="https://www4.bflix.to/movie/black-widow-9jl3q"><img src="{% static '/img/strplakat2.jpg' %}" alt="">
     </div>
     </a>
   </div>

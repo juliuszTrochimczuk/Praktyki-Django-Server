@@ -1,10 +1,12 @@
+{% load static %}
+
 body {background:white; margin: auto; text-align:center;}
 
 
 img {border:0px;}
 
 
-#gora {background: url('lol3.jpg') no-repeat; width:100%; height:150px; clear:both; margin: auto; color: white;}
+#gora {background: url("{% static '/img/lol3.jpg' %}") no-repeat; width:100%; height:150px; clear:both; margin: auto; color: white;}
 
 #gora h1 {font-size: 50px; padding:0; margin:0; padding-top:35px; color: white;}
 #menu {width:100%; height:30px; clear:both; margin: auto; background:black;}
@@ -25,7 +27,7 @@ img {border:0px;}
 body{
     margin: 0;
     padding: 0;
-    background: url('cos.jpg') no-repeat;
+    background: url("{% static '/img/cos.jpg' %}") no-repeat;
   }
   .slidershow{
     width: 24%;
