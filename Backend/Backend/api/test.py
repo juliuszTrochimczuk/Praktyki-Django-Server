@@ -6,7 +6,7 @@ matrix = movie.get_movie('0133093')
 
 matrixInfo = matrix.values()
 
-print(matrixInfo[24])
+print(matrixInfo[16])
 
 #Index 0 title of film
 # Index 1 original title of film
