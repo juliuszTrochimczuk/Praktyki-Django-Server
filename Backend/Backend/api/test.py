@@ -2,11 +2,11 @@ from imdb import IMDb
 
 movie = IMDb()
 
-matrix = movie.get_movie('0133093')
+matrix = movie.get_movie('9376612')
 
 matrixInfo = matrix.values()
 
-print(matrixInfo[16])
+print(matrixInfo[1])
 
 #Index 0 title of film
 # Index 1 original title of film
