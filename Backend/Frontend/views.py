@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 
@@ -16,3 +16,6 @@ def Comedy(request):
 
 def Animation(request):
     return render(request, 'animacja.html')
+
+def Film(request):
+    return render(request, 'film-data.html')

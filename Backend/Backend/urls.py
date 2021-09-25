@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Frontend.views import OpeningSite
-from Frontend.views import Action
-from Frontend.views import Comedy
-from Frontend.views import Horror
-from Frontend.views import Animation
+from Frontend.views import OpeningSite, Action, Comedy, Horror, Animation, Film
 from Backend.api.ConnectionIMDb import GettingFilmInfo
 
 urlpatterns = [
@@ -29,5 +25,6 @@ urlpatterns = [
     path('action', Action),
     path('comedy', Comedy),
     path('horror', Horror),
-    path('animation', Animation)
+    path('animation', Animation),
+    path('film', Film)
 ]

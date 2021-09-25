@@ -1,7 +1,8 @@
 from imdb import IMDb
 from django import http
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
+from django.urls import reverse
 import json
 import os
 
@@ -24,4 +25,12 @@ def GettingFilmInfo(request):
 
     movieInfo = movie.values()
 
-    return HttpResponse(json.dumps({'status':"successful"}))
+    return HttpResponse(json.dumps({'status':'successful'}))
+
+
+#'Film_Title': movieInfo[0],
+#'Original_Film_Title': movieInfo[1],
+#'Name_Of_Actors': movieInfo[2],
+#'Type_Film': movieInfo[3],
+#'Raiting': movieInfo[14],
+#'Original_Date': movieInfo[21]

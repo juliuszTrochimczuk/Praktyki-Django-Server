@@ -2,7 +2,7 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
-  <script src = "Request_To_Api.js"></script>
+  <script src = "{% static '/js/Request_To_Api.js' %}"></script>
   <title>filmy</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
     <input type="radio" name="r" id="r2">
     <input type="radio" name="r" id="r3">
     <div class="slide s1">
-      <input type = "image" id = image src = "{% static '/img/strplakat.jpg' %}" onClick = "alert('XD')">
+      <input type = "image" id = image src = "{% static '/img/strplakat.jpg' %}" onClick = "SendingRequest(9376612)">
     </div>
     </a>
     <div class="slide">
