@@ -2,6 +2,7 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+  <script src = "{% static '/js/Request_To_Api.js' %}"></script>
   <title>filmy</title>
 </head>
 <body>
@@ -10,13 +11,13 @@
 <div id="gora"><h1>FILMY</h1>strona główna</div>
 <div id="menu">
 <ul>
-<li><a href="akcja.html">akcja</a></li> 
-<li><a href="komedia.html">komedia</a></li> 
-<li><a href="horror.html">horror</a></li> 
-<li><a href="animacja.html">animacja</a></li>
+<li><a href="action">akcja</a></li>
+<li><a href="comedy">komedia</a></li>
+<li><a href="horror">horror</a></li>
+<li><a href="animation">animacja</a></li>
 <div id="strona">
 <ul>
-<li><a href="index.html">strona główna</a></li> 
+<li><a href="main">strona główna</a></li>
 </ul>  
 </div>
 
@@ -27,15 +28,15 @@
     <input type="radio" name="r" id="r2">
     <input type="radio" name="r" id="r3">
     <div class="slide s1">
-      <a href="https://www4.bflix.to/movie/shang-chi-and-the-legend-of-the-ten-rings-0mrp7"><img src="{% static '/img/strplakat.jpg' %}" alt="">
+      <input type = "image" id = image src = "{% static '/img/plakaty/strplakat.jpg' %}" onClick = "SendingRequest(9376612)">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/avengers-endgame-xjm5v"><img src="{% static '/img/strplakat1.jpg' %}" alt="">
+       <input type = "image" id = image src = "{% static '/img/plakaty/strplakat1.jpg' %}" onClick = "SendingRequest(4154796)">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/black-widow-9jl3q"><img src="{% static '/img/strplakat2.jpg' %}" alt="">
+       <input type = "image" id = image src = "{% static '/img/plakaty/strplakat2.jpg' %}" onClick = "SendingRequest(3480822)">
     </div>
     </a>
   </div>

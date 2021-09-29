@@ -1,0 +1,59 @@
+-- AKCJA --
+
+  <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <div class="slide s1">
+      <input type = "image" id = image src = "{% static '/img/plakat-avengers.jpg' %}" onClick = "SendingRequest(4154756)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/plakat-legion-samobojcow.jpg' %}" onClick = "SendingRequest(6334354)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/plakat-wolverine.jpg' %}" onClick = "SendingRequest(3315342)">
+    </div>
+    </a>
+  </div>
+
+-- KOMEDIA --
+
+  <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <div class="slide s1">
+      <input type = "image" id = image src = "{% static '/img/byl-sobie-pies.jpg' %}" onClick = "SendingRequest(8385474)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/spongebob.jpg' %}" onClick = "SendingRequest(4823776)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/Dolittle.jpg' %}" onClick = "SendingRequest(6673612)">
+    </div>
+    </a>
+  </div>
+
+-- HORROR --
+
+  <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <div class="slide s1">
+      <input type = "image" id = image src = "{% static '/img/niewidzialny-czlowiek.jpg' %}" onClick = "SendingRequest(1051906)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/ciche-miejsce.jpg' %}" onClick = "SendingRequest(8332922)">
+    </div>
+    </a>
+    <div class="slide">
+      <input type = "image" id = image src = "{% static '/img/obecnosc.jpg' %}" onClick = "SendingRequest(7069210)">
+    </div>
+    </a>
+  </div>
