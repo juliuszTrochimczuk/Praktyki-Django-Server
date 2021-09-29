@@ -2,6 +2,7 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+  <script src = "{% static '/js/Request_To_Api.js' %}"></script>
   <title>animacja</title>
 </head>
 <body>
@@ -28,15 +29,15 @@
     <input type="radio" name="r" id="r2">
     <input type="radio" name="r" id="r3">
     <div class="slide s1">
-      <a href="https://www4.bflix.to/movie/spider-man-into-the-spider-verse-oor5j"><img src="{% static '/img/aniplakat.jpg' %}" alt="">
+      <input type = "image" id = image src = "{% static '/img/plakaty/aniplakat.jpg' %}" onClick = "SendingRequest(4633694)">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/zootopia-286l"><img src="{% static '/img/aniplakat1.jpg' %}" alt="">
+      <input type = "image" id = image src = "{% static '/img/plakaty/aniplakat1.jpg' %}" onClick = "SendingRequest(2948356)">
     </div>
     </a>
     <div class="slide">
-      <a href="https://www4.bflix.to/movie/walle-prqx<img src="{% static '/img/aniplakat2.jpg' %}" alt="">
+      <input type = "image" id = image src = "{% static '/img/plakaty/aniplakat2.jpg' %}" onClick = "SendingRequest(0910970)">
     </div>
     </a>
   </div>

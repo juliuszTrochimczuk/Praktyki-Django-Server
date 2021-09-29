@@ -1,27 +1,43 @@
 <html>
-    <head>
-        {% load static %}
-        <script src = "{% static '/js/Loading_New_Page.js' %}"></script>
-    </head>
-    <body>
-    <h1 class = "succes"> Status </h1>
-        <h1 id  = "a">
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+   <script src = "{% static '/js/Request_To_Api.js' %}"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src = "{% static '/js/Loading_New_Page.js' %}"></script>
+  <title>o filmie</title>
+</head>
+<body>
+<div id="gora"><h1>FILMY</h1>o filmie</div>
+<div id="menu">
+<ul>
+<li><a href="action">akcja</a></li>
+<li><a href="comedy">komedia</a></li>
+<li><a href="horror">horror</a></li>
+<li><a href="animation">animacja</a></li>
+<div id="strona">
+<a href="main">strona główna</a></li>
+        <h1 id  = "Film_Title">
             FILM TITLE
         </h1>
-        <h2 class = "Original_Film_Title">
+        <h2 id = "Original_Film_Title">
             Original title of film
         </h2>
-        <h3 class = "List_Of_Actors">
+        <h3 id = "List_Of_Actors">
             List of actors
         </h3>
-        <h3 class = "Type_Of_Film">
+        <h3 id = "Type_Of_Film">
             type of film
         </h3>
-        <h3 class = "Raiting">
+        <h3 id = "Raiting">
             Raiting
         </h3>
-        <h3 class = "Date_Release">
-            date release
-        </h3>
     </body>
+</html>
+</head>
+<body>
+
+
+
+</body>
 </html>

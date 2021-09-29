@@ -2,12 +2,13 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+    <script src = "{% static '/js/Request_To_Api.js' %}"></script>
   <title>komedia</title>
 </head>
 <body>
 
 
-<div id="gora"><h1>FILMY</h1>komedia.</div>
+<div id="gora"><h1>FILMY</h1>komedia</div>
 <div id="menu">
 <ul>
 <li><a href="action">akcja</a></li>
@@ -17,9 +18,31 @@
 <div id="strona">
 <ul>
 <li><a href="main">strona główna</a></li>
+<div class="slidershow middle">
 
+  <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <div class="slide s1">
+      <input type = "image" id = image src = "{% static '/img/plakaty/komplakat.jpg' %}" onClick = "SendingRequest(8385474)">
+    </div>
+    </a>
+    <div class="slide">
+       <input type = "image" id = image src = "{% static '/img/plakaty/komplakat1.jpg' %}" onClick = "SendingRequest(4823776)">
+    </div>
+    </a>
+    <div class="slide">
+       <input type = "image" id = image src = "{% static '/img/plakaty/komplakat2.jpg' %}" onClick = "SendingRequest(6673612)">
+    </div>
+    </a>
+  </div>
 
-</ul>  
+  <div class="navigation">
+    <label for="r1" class="bar"></label>
+    <label for="r2" class="bar"></label>
+    <label for="r3" class="bar"></label>
+  </div>
 </div>
 
 

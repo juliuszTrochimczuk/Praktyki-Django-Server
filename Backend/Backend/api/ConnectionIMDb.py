@@ -25,8 +25,25 @@ def GettingFilmInfo(request):
 
     movieInfo = movie.values()
 
-    return HttpResponse(json.dumps({'status':'successful'}))
+    actor1 = str(movieInfo[2][0])
+    actor2 = "  "+str(movieInfo[2][1])
+    actor3 = "  "+str(movieInfo[2][2])
+    actor4 = "  "+str(movieInfo[2][3])
+    actor5 = "  "+str(movieInfo[2][4])
 
+
+
+    List_of_actors = [actor1, actor2, actor3, actor4, actor5]
+
+    return HttpResponse(json.dumps({
+        'status': "succesful",
+        'Film_Title': str(movieInfo[0]),
+        'Original_Film_Title': str(movieInfo[1]),
+        'Name_Of_Actors': List_of_actors,
+        'Type_Film': str(movieInfo[3]),
+        'Raiting': str(movieInfo[14]),
+
+    }))
 
 #'Film_Title': movieInfo[0],
 #'Original_Film_Title': movieInfo[1],
